@@ -1,0 +1,231 @@
+header {
+    height: 36px;
+    background-color: darkslategray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.header-center img {
+    height: 36px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-center img {
+    height: 36px;
+   }
+   @media screen and (max-width:780px) { 
+    .header-center img { 
+           height: 20px;
+       }
+   }
+   
+
+.nav {
+    display: flex;
+}
+
+.nav > li > a {
+    color: #fff;
+    font-size: 20px;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+.welcome {
+    /* ../　フォルダを一つ上に戻る */
+    background-image: url(../image/KAWAMURAall.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+#carouselExampleFade {
+    margin: 10px 200px;
+}
+
+.welcome {
+    background-size: cover;
+   }
+   @media screen and (max-width:780px) { 
+       .welcome { 
+        background-size:contain;	
+       }
+   }
+
+.welcome .bglmg {
+  position   : absolute;
+  top        : 0;
+  left       : 0;
+  bottom     : 0;
+  right      : 0;
+  opacity    : 0;
+  animation  : bgAnime 25s infinite; 
+
+}
+
+ .welcom .src1 {
+    background-image : url(../image/KAWAMURAall.jpg);   /* 背景の画像を指定 */
+  }
+  .welcom .src2 {
+    background-image : url(../image/17awwpc.jpg);   /* 背景の画像を指定 */
+    animation-delay  : 4s;
+  }
+  .welcom .src3 {
+    background-image : url(../image/19sspc.jpg);   /* 背景の画像を指定 */
+    animation-delay  : 8s;
+  }
+  .welcom .src4 {
+    background-image : url(../image/18autmnpc.jpg);   /* 背景の画像を指定 */
+    animation-delay  : 12s;
+  }
+  
+  @keyframes bgAnime {
+     0% { opacity: 0; transform: rotateY(-180deg) }
+     10% { opacity: 1; transform: rotateY(0deg) }
+    25% { opacity: 1; transform: rotateY(0deg) }
+    35% { opacity: 0; transform: rotateY(180deg) }
+    36% { opacity: 0; }
+   100% { opacity: 0; }
+}
+
+
+
+.title {
+    font-size: 80px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.guideline {
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.guidline li {
+    margin-top: 14px;
+}
+
+/* .header-right {
+    width: 100%;
+} */
+
+.header-right img {
+    height: 36px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    transition-property: height;
+    transition-duration: 1s;
+}
+
+.header-right img:hover {
+    transform:scale(1.2,1.2);
+}
+
+.contents {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin: 20px auto;
+}
+
+.block-top-event--header {
+    width: 100%;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin: 0;
+    padding: 50px 0 50px;
+    /* font-style: italic; */
+}
+
+.block-top-event--goods {
+    width: 90%;
+	min-width: 640px;
+	margin: 0 auto;
+	background-color: #ffffff;
+	display: box;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -o-box;
+	display: -ms-box;
+	box-pack: justify;
+	-moz-box-pack: justify;
+	-webkit-box-pack: justify;
+	-o-box-pack: justify;
+	-ms-box-pack: justify;	
+    
+}
+
+.block-goods-list-d--icon {
+    width: 10px;
+    height: 10px;
+}
+
+.block-thumbnail-t--goods {
+    width: 200px;
+	height: 200px;
+	background-color: #52d3ff;
+	display: block;
+}
+
+@keyframes bigger {
+    from {
+        height: 36px
+
+    }
+
+    to {
+        height: 45px
+    }
+}
+
+.card img:hover {
+    transform:scale(1.1,1.1);
+    animation-duration: 1s;
+}
+
+/* 
+.box {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 20px;
+  }
+
+.item {
+    width: 20px;
+    height: 20px;
+    background-color: beige;
+
+} */
+
+.description {
+    width: 50%;
+}
+.contents > img {
+    height: 150px;
+    margin: 0 20px;
+}
+footer {
+    background-color: darkslategray;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 100px;
+    font-size: 20px;
+}
